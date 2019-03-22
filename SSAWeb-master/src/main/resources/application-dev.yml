@@ -1,0 +1,19 @@
+#port
+server:
+  port: 9090
+#Database connection
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        dialect: org.hibernate.dialect.OracleDialect
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: SSN_DEV
+    password: SSN_DEV
+    
